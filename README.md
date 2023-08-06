@@ -13,3 +13,11 @@ Actions:
 up: increase the keyboard backlight brightness
 
 down: decrease the keyboard backlight brightness
+
+## Installation
+
+Clone this repository, cd into keylight, and run:
+sudo make install
+
+You can then run 'make clean' to clean up object files, or run sudo make uninstall to uninstall.
+
