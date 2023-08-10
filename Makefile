@@ -9,9 +9,9 @@ clean:  keylight.o keylight
 	rm keylight.o keylight
 
 install:	keylight
-	cp keylight /usr/local/bin/
-	chown root:root /usr/local/bin/keylight
-	chmod ug+s /usr/local/bin/keylight
+	cp keylight $(DESTDIR)$(PREFIX)/bin/
+	chown root:root $(DESTDIR)$(PREFIX)/bin/keylight
+	chmod ug+s $(DESTDIR)$(PREFIX)/bin/keylight
 
-uninstall:	/usr/local/bin/keylight
-	rm /usr/local/bin/keylight
+uninstall:	$(DESTDIR)$(PREFIX)/bin/keylight
+	rm $(DESTDIR)$(PREFIX)/bin/keylight
