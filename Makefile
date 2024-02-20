@@ -1,7 +1,7 @@
 # this is my makefile for keylight
 
 CC=gcc #compiler
-PREFIX=/usr/local/bin
+PREFIX=/usr/local
 
 
 all:	keylight.o
