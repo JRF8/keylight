@@ -11,6 +11,7 @@ clean:  keylight.o keylight
 	rm keylight.o keylight
 
 install:	keylight
+	mkdir $(DESTDIR)$(PREFIX)/bin/
 	cp keylight $(DESTDIR)$(PREFIX)/bin/
 	chown root:root $(DESTDIR)$(PREFIX)/bin/keylight
 	chmod ug+s $(DESTDIR)$(PREFIX)/bin/keylight
