@@ -83,6 +83,9 @@ void setNewBrightness(int fd, int cur_bright, int max_bright, char *user_in){
 		} else {
 			new_bright = cur_bright + INCR;
 		}
+	} else if (strcmp(user_in,"get") == 0){
+		new_bright = cur_bright;
+		printf("%d\n",cur_bright);
 	} else {
 		"do nothing";
 	}
